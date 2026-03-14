@@ -1,10 +1,9 @@
-
 name: Build ANSH Studio Pro APK
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # This allows you to trigger the build manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build-android:
@@ -35,3 +34,4 @@ jobs:
         with:
           name: ANSH-Studio-Pro-APK
           path: bin/*.apk
+          
